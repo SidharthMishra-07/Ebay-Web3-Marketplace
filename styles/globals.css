@@ -67,3 +67,8 @@
 html {
   font-family: Poppins, system-ui, sans-serif;
 }
+.nft-title{
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 900;
+}

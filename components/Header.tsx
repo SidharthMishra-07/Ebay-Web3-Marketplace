@@ -20,20 +20,20 @@ const Header = () => {
   const disconnect = useDisconnect();
   const address = useAddress();
   const [searchValue, setSearchValue] = useRecoilState(searchTextState);
-  const bottomBar = [
-    "Home",
-    "Electronics",
-    "Computer",
-    "Video Games",
-    "Home & Garden",
-    "Healthy & Beauty",
-    "Collectibles and Art",
-    "Books",
-    "Musics",
-    "Deals",
-    "Other",
-    "More",
-  ];
+  // const bottomBar = [
+  //   "Home",
+  //   "Electronics",
+  //   "Computer",
+  //   "Video Games",
+  //   "Home & Garden",
+  //   "Healthy & Beauty",
+  //   "Collectibles and Art",
+  //   "Books",
+  //   "Musics",
+  //   "Deals",
+  //   "Other",
+  //   "More",
+  // ];
   const [open, setOpen] = useState<boolean>(false);
   useEffect(() => {
     Router.events.on("routeChangeComplete", () => setOpen(false));
@@ -83,14 +83,7 @@ const Header = () => {
       <section className="flex items-center space-x-2 py-5 ">
         <div className="h-16 w-16 flex-shrink-0 cursor-pointer sm:w-28 md:w-44">
           <Link href="/">
-            <Image
-              className="h-full w-full object-contain"
-              alt="ThirdWeb Logo"
-              src={"https://links.papareact.com/bdb"}
-              width={100}
-              height={100}
-              priority
-            />
+            <h1 className="nft-title">NFT WEB3</h1>
           </Link>
         </div>
         <div className="hidden w-20 cursor-pointer items-center hover:underline lg:flex">
@@ -121,13 +114,13 @@ const Header = () => {
 
       {/* Bottom Nav Bar */}
 
-      <section className="flex space-x-6 overflow-x-scroll whitespace-nowrap p-3 text-sm scrollbar-hide">
+      {/* <section className="flex space-x-6 overflow-x-scroll whitespace-nowrap p-3 text-sm scrollbar-hide">
         {bottomBar.map((item) => (
           <p className="link" key={item}>
             {item}
           </p>
         ))}
-      </section>
+      </section> */}
     </header>
   );
 };

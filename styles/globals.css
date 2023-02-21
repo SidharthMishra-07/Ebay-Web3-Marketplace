@@ -67,6 +67,14 @@
 html {
   font-family: Poppins, system-ui, sans-serif;
 }
+body{
+  margin-top: 2px;
+  background-color: rgb(220, 235, 249) !important;
+  
+}
+.heading{
+  background-color: whitesmoke;
+}
 .nft-title{
   margin-top: 14px;
   font-size: 20px;

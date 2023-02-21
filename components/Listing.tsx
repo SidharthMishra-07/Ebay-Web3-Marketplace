@@ -21,7 +21,7 @@ const Listing = ({ listing }: Props) => {
 
   return (
     <div
-      className="card flex flex-col"
+      className="card flex flex-col bg-white bg-opacity-1"
       onClick={() => router.push(`/listing/${listing.id}`)}
     >
       <div className="flex h-52 flex-1 flex-col items-center object-cover pb-2">

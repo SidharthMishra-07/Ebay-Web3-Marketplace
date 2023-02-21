@@ -51,7 +51,7 @@ const Header = () => {
             Hi, {address.slice(0, 5) + "..." + address.slice(-4)}
           </button>
         ) : (
-          <button onClick={connectWithMetaMask} className="primary-button">
+          <button onClick={connectWithMetaMask} className="primary-button bg-opacity-100">
             Connect Your Wallet
           </button>
         )}
@@ -80,7 +80,7 @@ const Header = () => {
 
       {/* Middle Navbar */}
 
-      <section className="flex items-center space-x-2 py-5 bg-black bg-opacity-5">
+      <section className="flex items-center space-x-2 py-5 heading">
         <div className="h-16 w-16 flex-shrink-0 cursor-pointer sm:w-28 md:w-44">
           <Link href="/">
             <h1 className="nft-title px-5">NFT TICKETS</h1>

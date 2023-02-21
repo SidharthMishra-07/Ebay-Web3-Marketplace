@@ -83,13 +83,13 @@ const Header = () => {
       <section className="flex items-center space-x-2 py-5 ">
         <div className="h-16 w-16 flex-shrink-0 cursor-pointer sm:w-28 md:w-44">
           <Link href="/">
-            <h1 className="nft-title">NFT WEB3</h1>
+            <h1 className="nft-title">NFT TICKETS</h1>
           </Link>
         </div>
-        <div className="hidden w-20 cursor-pointer items-center hover:underline lg:flex">
-          <p className="text-sm text-gray-600">Shop by Category</p>
+        {/* <div className="hidden w-20 cursor-pointer items-center hover:underline lg:flex">
+          <p className="text-sm text-gray-600">Shop</p>
           <ChevronDownIcon className="h-4 w-4 flex-shrink-0 stroke-2" />
-        </div>
+        </div> */}
         <div className="flex flex-1 items-center space-x-2 overflow-hidden rounded-xl border-2 border-gray-500">
           <input
             type="text"

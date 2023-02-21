@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider desiredChainId={network}>
       <RecoilRoot>
         <Head>
-          <title>Ebay Web3 Clone</title>
+          <title>NFT Ticketing System</title>
         </Head>
         <div>
           <Toaster />

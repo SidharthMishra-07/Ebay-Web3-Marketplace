@@ -40,14 +40,14 @@ const SideBar = ({ isOpen }: Props) => {
         <SquaresPlusIcon className="mr-2 h-6 w-6" />
         List Item
       </button>
-      <button className="side-nav-button">
+      {/* <button className="side-nav-button">
         <BellIcon className="mr-2 h-6 w-6" />
         Notifications
-      </button>
-      <button className="side-nav-button">
+      </button> */}
+      {/* <button className="side-nav-button">
         <PhoneIcon className="mr-2 h-6 w-6" />
         Help & Contact
-      </button>
+      </button> */}
     </div>
   );
 };

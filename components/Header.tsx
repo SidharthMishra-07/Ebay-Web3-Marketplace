@@ -42,7 +42,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className="relative mx-auto max-w-6xl p-2">
+    <header className="relative mx-auto max-w-6xl p-2 ">
       {/* Top Navbar */}
 
       <nav className="flex justify-between">
@@ -56,13 +56,13 @@ const Header = () => {
           </button>
         )}
         <div className="flex items-center space-x-4 text-sm">
-          <p className="header-link">Daily Deals</p>
-          <p className="header-link">Ship to</p>
-          <p className="header-link">Sell</p>
-          <p className="link gap-1 sm:inline-flex">
+          {/* <p className="header-link">Daily Deals</p>
+          <p className="header-link">Ship to</p> */}
+          <p className="header-link">Menu Options</p>
+          {/* <p className="link gap-1 sm:inline-flex">
             WatchList
             <ChevronDownIcon className="h-4 w-4 stroke-2" />
-          </p>
+          </p> */}
           <button
             onClick={() => setOpen(!open)}
             className="animate-large shadow-none"
@@ -80,10 +80,10 @@ const Header = () => {
 
       {/* Middle Navbar */}
 
-      <section className="flex items-center space-x-2 py-5 ">
+      <section className="flex items-center space-x-2 py-5 bg-black bg-opacity-5">
         <div className="h-16 w-16 flex-shrink-0 cursor-pointer sm:w-28 md:w-44">
           <Link href="/">
-            <h1 className="nft-title">NFT TICKETS</h1>
+            <h1 className="nft-title px-5">NFT TICKETS</h1>
           </Link>
         </div>
         {/* <div className="hidden w-20 cursor-pointer items-center hover:underline lg:flex">
